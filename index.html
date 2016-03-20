@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>home</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/icomoon.css" rel="stylesheet" type="text/css">
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+        //滚动时显示header背景 
+        $(function () {  
+            $(window).scroll(function(){  
+                if ($(window).scrollTop()>300){  
+                    $("header").css('background','#fff');
+                }  
+                else  
+                {  
+                    $("header").css('background','none');  
+                }  
+            }) 
+        })
+		$(".work_nav li a").click(function(){
+			$(".work_nav li a").removeClass('border')
+			$(this).addClass('border')
+		})	
+			$("#All").click(function(){
+			$(".work_content li").show(500)
+			})
+			$("#Brochures").click(function(){
+				$(".work_content li").hide()
+				$(".mobile").show(500)
+				$(".berlin").show(500)
+			})
+			$("#Mobile").click(function(){
+				$(".work_content li").hide()
+				$(".mobile").show(500)
+			})
+			$("#Slider").click(function(){
+				$(".work_content li").hide()
+				$(".slider").show(500)
+			})
+			$("#Videos").click(function(){
+				$(".work_content li").hide()
+				$(".videos").show(500)
+			})
+			$("#Web").click(function(){
+				$(".work_content li").hide()
+				$(".web").show(500)
+			})
+			$(".home").click(function(){
+			$(".more").slideDown(200)
+			})
+			$("nav ul").hover(function(){
+			$(".more").slideUp(200)
+			})
+});
+$(function(){  
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+        $(function () {  
+            $(window).scroll(function(){  
+                if ($(window).scrollTop()>100){  
+                    $("#back-to-top").fadeIn(1500);  
+                }  
+                else  
+                {  
+                    $("#back-to-top").fadeOut(1500);  
+                }  
+            });  
+  
+            //当点击跳转链接后，回到页面顶部位置  
+  
+            $("#back-to-top").click(function(){  
+                $('body,html').animate({scrollTop:0},1000);  
+                return false;  
+            });  
+        });  
+    }); 
+</script>
+</head>
+
+<body>
+
+    <!--头部开始-->
+<header>
+            <div class="logo"><a href="#"><img src="images/oshine-logo-black.png"/></a></div>
+            <!--导航-->
+            <nav>
+        		<ul class="mobile">
+                    <li class="home"><a class="nav_now">Home</a></li>
+                    <li class="more" style="display: none;"><a href="#">Pages</a></li>
+                    <li class="more" style="display: none;"><a href="#">Portfolio</a></li>
+                    <li class="more" style="display: none;"><a href="#">SINGLE PORTFOLIO</a></li>
+                    <li class="more" style="display: none;"><a href="#">Headers</a></li>
+                    <li class="more" style="display: none;"><a href="#">Journal</a></li>
+                    <li class="more" style="display: none;"><a href="#">Shop</a></li>
+                    <li class="more" style="display: none;"><a href="#">Shortcodes</a></li>
+                </ul>
+                <ul class="pc">
+                    <li><a href="#" class="home">home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">SINGLE PORTFOLIO</a></li>
+                    <li><a href="#">Headers</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Shortcodes</a></li>
+                </ul> 
+            </nav>
+           <!--头部icon-->
+            <div class="header_icon">
+                <ul>
+                    <li><a href="#"><i class="icon-search"></i></a></li>
+                    <li><a href="#"><i class="fa fa-bars"></i></a></li>
+                    <li><a href="#"><i class="icon-icon_bag_alt"></i></a></li>
+                </ul>
+            </div>
+    </header>    
+    <!--banner开始-->
+<section id="banner">
+        <div class="inner">
+            <div class="banner_in">
+                <h4>MALING THE WEB</h4>
+                <h2>STYLISH</h2>
+                <p>The Best or Nothing</p>
+            </div>
+        </div>
+    </section>    
+    <!--内容we开始-->
+<section id="we">
+        <div class="inner">
+            <div class="top">
+                <h3>WE ARE OSHINE</h3>
+                <h6>A beautiful responsive multi-purpose wordpress theme</h6>
+                <div class="part"><i class="fa fa-stop"></i></div>
+            </div>
+            <p>Oshine comes with 12 unique and stunning demos. We have crafted each and every demo <br/>with extensive care and precision and the theme is power packed yet easy to use.</p>
+        </div>
+    </section>    
+    <!--4个icon开始-->
+<div id="icon">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="icon-strategy"></i>
+                    <h5>12 DEMOS</h5>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-tools2"></i>
+                    <h5>POWERFUL OPTIONS</h5>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-genius"></i>
+                    <h5>PAGE BUILDER</h5>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-hotairballoon"></i>
+                    <h5>UNLIMITED PORTFOLIO</h5>
+                </a>
+            </li>
+        </ul>
+    </div>    
+    <!--内容6个list开始-->
+<section id="list">
+        <div class="inner">
+            <ul class="list_left">
+                <li>
+                    <h5><i class="icon-genius"></i>MODERN DESIGN</h5>
+                    <p>Proin facilisis varius nunc. Curabitur eros risus, ultrices et dui ut, luctus accumsan nibh. Fusce convallis sapien placerat tellus suscipit vehicula.</p>
+                </li>
+                <li>
+                    <h5><i class="icon-tools-2"></i>SUPER  CUSTOMIZABLE</h5>
+                    <p>Proin facilisis varius nunc. Curabitur eros risus, ultrices et dui ut, luctus accumsan nibh. Fusce convallis sapien placerat tellus suscipit vehicula.</p>
+                </li>
+                <li>
+                    <h5><i class="icon-lightbulb"></i>UNIQUE LAYOUT</h5>
+                    <p>Proin facilisis varius nunc. Curabitur eros risus, ultrices et dui ut, luctus accumsan nibh. Fusce convallis sapien placerat tellus suscipit vehicula.</p>
+                </li>
+            </ul>
+            <ul class="list_right">
+                <li>
+                    <h5><i class="icon-icon_loading"></i>AJAX TRANSITIONS</h5>
+                    <p>Proin facilisis varius nunc. Curabitur eros risus, ultrices et dui ut, luctus accumsan nibh. Fusce convallis sapien placerat tellus suscipit vehicula.</p>
+                </li>
+                <li>
+                    <h5><i class="icon-icon_bag_alt"></i>WOO COMMERCE</h5>
+                    <p>Proin facilisis varius nunc. Curabitur eros risus, ultrices et dui ut, luctus accumsan nibh. Fusce convallis sapien placerat tellus suscipit vehicula.</p>
+                </li>
+                <li>
+                    <h5><i class="icon-basket"></i>40+ MODULES</h5>
+                    <p>Proin facilisis varius nunc. Curabitur eros risus, ultrices et dui ut, luctus accumsan nibh. Fusce convallis sapien placerat tellus suscipit vehicula.</p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </section>    
+    <!--固定背景开始-->
+<div id="bj"></div>
+    <!--内容work开始-->
+<section id="work">
+        <div class="inner">
+            <div class="top">
+                <h3>OUR WORK</h3>
+                <h6>A beautiful responsive multi-purpose wordpress theme</h6>
+                <div class="part"><i class="fa fa-stop"></i></div>
+            </div>
+            <div class="work_tab">
+                <ul class="work_nav">
+                    <li><a id="All" class="border">All</a></li>
+                    <li><a id="Brochures">Brochures</a></li>
+                    <li><a id="Mobile">Mobile</a></li>
+                    <li><a id="Slider">Slider</a></li>
+                    <li><a id="Videos">Videos</a></li>
+                    <li><a id="Web">Web</a></li>
+                    <div class="clear"></div>
+                </ul>
+                <ul class="work_content">
+                    <li class="mobile">
+                        <div class="txt">
+                            <h5>Left Fixed Sidebar</h5>
+                            <p>Classic . Photography . Videos</p>
+                        </div>
+                        <img src="images/road-product-650x385.jpg"/>
+                    </li>
+                    <li class="berlin">
+                        <div class="txt">
+                            <h5>Left Fixed Sidebar</h5>
+                            <p>Classic . Photography . Videos</p>
+                        </div>
+                        <img src="images/s3-650x385.jpg"/>
+                    </li>
+                    <li class="videos">
+                        <div class="txt">
+                            <h5>Left Fixed Sidebar</h5>
+                            <p>Classic . Photography . Videos</p>
+                        </div>
+                        <img src="images/Vinyl-Record-PSD-full-650x385.jpg"/>
+                    </li>
+                    <li class="slider">
+                        <div class="txt">
+                            <h5>Left Fixed Sidebar</h5>
+                            <p>Classic . Photography . Videos</p>
+                        </div>
+                        <img src="images/poster-frame-650x385.jpg"/>
+                    </li>
+                    <li class="web">
+                        <div class="txt">
+                            <h5>Left Fixed Sidebar</h5>
+                            <p>Classic . Photography . Videos</p>
+                        </div>
+                        <img src="images/wanderlust07-650x385.jpg"/>
+                    </li>
+                    <li class="women">
+                        <div class="txt">
+                            <h5>Left Fixed Sidebar</h5>
+                            <p>Classic . Photography . Videos</p>
+                        </div>
+                        <img src="images/oshin-model-0011-650x385.jpg"/>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="work_but"><p><a href="#">VIEW ALL WORK</a></p></div>
+         </div>
+    </section>
+    <!--twi开始-->
+<div id="twi">
+        <div class="inner">
+            <div class="twi_icon"><i class="fa fa-twitter"></i></div>
+            <p>RT @<a href="#">WooThemes</a>: How to evaluate a plugin for your WooCommerce store:<br><a href="#">http://t.co/tLJA5Ktkqu</a></p>
+            <h6><a href="#">@envato</a></h6>
+        </div>
+    </div>
+    <!--内容clients开始-->
+<section id="clients">
+            <div class="top">
+                <h3>OUR CLIENTS</h3>
+                <h6>A beautiful responsive multi-purpose wordpress theme</h6>
+                <div class="part"><i class="fa fa-stop"></i></div>
+            </div>
+            <div class="cliens_img">
+                <div class="img_left"><img src="images/Marks_2048x1536_144dpi_12_1000.jpg"/></div>
+                <div class="img_right"><img src="images/Marks_2048x1536_144dpi_11_1000.jpg"/></div>
+                <div class="clear"></div>
+            </div>
+    </section>
+    <!--黑色touch开始-->
+<div id="touch">
+        <h3>GET IN TOUCH</h3>
+        <p>Have an idea or a project, lets collaborate and build some awesome stuff</p>
+        <div class="touch_but"><p><a href="#">BUY NOW</a></p></div>
+    </div>
+    <!--底部开始-->
+<footer>
+        <div class="inner">
+            <div class="footer_in">
+                <!--第一部分-->
+                <ul class="footer_one">
+                    <div class="footer_logo"><img src="images/oshin-black-logo.png"/></div>
+                    <p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim. Detracto erroribus et mea.</p>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+                <!--第二部分-->
+                <ul class="footer_two">
+                    <h5>Recent Posts</h5>
+                    <li>
+                        <div><img src="images/oshin-ipad-mock-75x50.jpg"/></div>
+                        <p>Oshine – a Creative<br/>ultipurpose WordPress<br/>theme</p>
+                        <time>October 10, 2014</time>
+                    </li>
+                    <li>
+                        <div><img src="images/responsive-road-300x214.jpg"/></div>
+                        <p>If You Are Good At Something.<br>Don’t Do It For Free</p>
+                        <time>October 10, 2014</time>
+                    </li>
+                </ul>
+                <!--第三部分-->
+                <ul class="footer_three">
+                    <h5>Links</h5>
+                    <li class="three_home"><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">About Us</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Team</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Blog</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Contact</a></li>
+                </ul>
+                <!--第四部分-->
+                <ul class="footer_four">
+                    <h5>From Instagram</h5>
+                    <li><p>slidebar</p><img src="images/8c9609f5b2a9b3d02ef5c09353f24100.jpg"/></li>
+                    <li><p>slidebar</p><img src="images/8925690044e337f4d9debf2c6cd32bc3.jpg"/></li>
+                    <li><p>slidebar</p><img src="images/de8c453d761ac7766e88f163e9edeae8.jpg"/></li>
+                    <li><p>slidebar</p><img src="images/536aa2e2a7f4164e20468743ed6e2f70.jpg"/></li>
+                    <li><p>slidebar</p><img src="images/b77b591b7fb67676812d05cddee8237e.jpg"/></li>
+                    <li><p>slidebar</p><img src="images/1c3913c0bb34fc46d7f5f2a6bccb86aa.jpg"/></li>
+                    <li><p>slidebar</p><img src="images/96015b4ff95f287dabad214d239852cc.jpg"/></li>
+                    <li><p>slidebar</p><img src="images/6b01da5c35f3c0e472365147b36d9a72.jpg"/></li>
+                    <li><p>slidebar</p><img src="images/8c9609f5b2a9b3d02ef5c09353f24100.jpg"/></li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+            <p id="back-to-top"><a href="#top"><img src="images/backtop_12.png" /></a></p>
+        </div>
+    </footer>
+    <!--copy版权开始-->
+<div id="copy">
+        <div class="inner">
+            <p>Copyright Brand Exponents 2014. All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
